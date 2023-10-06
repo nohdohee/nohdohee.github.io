@@ -1,0 +1,134 @@
+<!DOCTYPE html> <!-- 문서타입 html5-->
+<html> <!-- 시작태그 -->
+    <head>
+        <title>타이틀</title>
+        <meta charset="utf-8" />
+        <!-- utf-8, euc-kr -->
+        <meta name="keywords" contact="웹퍼블리싱, 계원, html, css" />
+    </head>
+    <body> <!-- 본문 -->
+        <a href="sub.html">서브페이지</a><br />
+        <a href="https://www.lgtwins.com/service/html.ncd?view=/pc_twins/twins_main/twins_main"> LG트윈스 공식홈페이지 바로가기</a><br />
+        <a href="https://www.youtube.com/@LGTwinsTV"> LG트윈스 유튜브</a><br />
+        <a href="https://www.instagram.com/lgtwinsbaseballclub/"> LG트윈스 인스타그램</a>
+
+        <img width="100px" height="100px" src="https://i.namu.wiki/i/eSQ4qK-1qOUrge7LxGtrADab6AFxequTxLeMfSLtE0xQMNYKrpChcdnp-ePUVfCkiSTY73C5fRXPmIywoVZusHueCXRmkANbk1FidiZN8HNVmRJAzj9LUBHFg24eSvngOZwUmHghbY7ScKB7WyJyqA.webp"/>
+        <img width="100px" src="https://i.namu.wiki/i/ER9oDmbh8iAHSFwpxIwnY9Hspim_veV__3sZNNk2zZ3nbNcK6CEF1HtFYTjzpY6ZpcThrbdXqsa5gwA39ddL4xwCGpBfWS-JWgu0Rs3HB4aRfpISJBVOJ22zQN3l4tSEuWisM3j51baVA_n_OqFLOQ.webp"/>
+        <img /> <!-- 독립형태그 -->
+
+        <a herf="http://www.naver.com" target="_blank">
+            <img width="100px" src="https://i.namu.wiki/i/FbytQwPxu8Er6-ZE8ITeOaCmsrVGeBPG2RhTRxaI7yEXNsAXmPDQNzWZh9Sa9Og2j1uGuyAdDo9zs2zvL6JaECsFFYiBKA0qhmUEPJ0NPX2becaw1NMtDyjJ1ieBD7AUMgNrxBP1r2OPgcUdkM8icw.webp"/>
+        </a>
+
+        <!-- <태그 속성="값">내용</태그> -->
+        <!-- <태그 속성="값" /> -->
+
+    </body>
+</html> <!-- 종료태그 -->
+<h1>대한민국</h1>
+        <h2>서울특별시</h2>
+        <h3>영등포구</h3>
+        <h2>경기도</h2>
+        <h3>안양시</h3>
+        <h3>의왕시</h3>
+        <h1>미국</h1>
+        <h1>일본</h1>
+        <h1>중국</h1>     
+
+        <p>문단은 한가지 주제를 가지고 있는 여러 문장으로 이루어진 단</p>
+
+        html에서는                띄어쓰기, <br /> 줄바꿈 무시
+        <hr />
+
+        <strong>강한 강조</strong> 
+        <em>강조</em>
+        <!--의미를 부여 (권장) -->
+
+        <b>굵은 글씨</b>
+        <i>기울임꼴(이탈릭체)</i>
+        <!--모양를 부여 (비권장) -->
+
+        <ul>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+        </ul>
+        <ol>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+        </ol>
+        <dl>
+            <dt>용어</dt>
+            <dd>용어설명</dd>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+        <style>
+             th,td{
+            border: solid 1px black;
+        }
+        </style> <!-- CSS-->
+        <table summary="table기본">
+            <caption>table기본형태</caption>
+            <thead>
+                <tr> <!-- 한줄 row 행-->
+                    <th scope="col" rowspan="2"> 제목1</th> <!-- 제목 한칸 colum 열-->
+                    <th scope="col" colspan="2">제목2</th>
+                    <th scope="col">제목3</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>제목1</th> <!--내용 한 칸-->
+                <th>제목2</th>
+                <th>제목3</th>
+            </tr>
+            <tr>
+                <td>내용1</td> <!--내용 한 칸-->
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+            <tbody>
+                <!-- 표 본문 -->
+            </tbody>
+            <tfoot>
+                <!-- 표 끝 -->
+            </tfoot>
+        </table>
+
+        <div>블록(block)형 구획 나눔</div>
+        <span>인라인(inline)형 구획 나눔</span>
+        <!-- 의미없이 사용하기 좋은 태그 -->
+        
+        <foem>
+            <label for="number">주민등록번호</label>
+            <input name="number" type="text" placeholder="-기호 없이 숫자만 입력해주세요" /> 
+            <input type="text" value="123456" />
+            <input type="password" />
+
+            <input type="radio" value="1" name="p1" checked />사과
+            <input type="radio" value="2" name="p1" />딸기
+            <input type="radio" value="3" name="p1" />바나나
+
+            <input type="checkbox" value="1" checked />빨강
+            <input type="checkbox" value="2" />파랑
+            <input type="checkbox" value="3" />노랑
+
+            <select>
+                <option>네이버</option>
+                <option>구글</option>
+                <option>계원</option>
+            </select>
+            <textarea rows="10" cols="60"> 여러줄의 장문을 작성 </textarea>
+
+            <input onclick="alert('버튼눌림');" type="button" value="버튼입니다" />
+            <button>
+                <strong>
+                    <ins>버튼입니다</ins>
+                </strong>
+            </button>
+            <input type="submit" value="제출" />
+
+        </foem>
+
+    </body>
+</html> <!-- 종료태그-->
