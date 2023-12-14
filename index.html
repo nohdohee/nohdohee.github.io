@@ -1,22 +1,185 @@
-<!DOCTYPE html> <!-- 문서타입 html5-->
-<html> <!-- 시작태그 -->
-    <head>
-        <title>노도희의 홈페이지</title>
-        <meta charset="utf-8" />
-        <!-- utf-8, euc-kr -->
-        <meta name="keywords" contact="웹퍼블리싱, 계원, html, css" />
-    </head>
-    <body> <!-- 본문 -->
-        <a href="sub.html">서브페이지</a>
-        <a href="https://www.google.com">구글 바로가기</a>
-        <a href="https://cafe.naver.com/kwdmd">카페 바로가기</a>
-        <a href="https://www.naver.com">네이버 바로가기</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>직무수행능력평가2</title>
+    <style>
+        header {
+            text-align: center;
+            position: relative;
+        }
 
-        <img width="100px" height="100px" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.valuetimes.co.kr%2F%3Fq%3DYToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6Nzt9%26bmode%3Dview%26idx%3D14108443%26t%3Dboard&psig=AOvVaw3YiWk5ZinP7F8jmxH9Uqbk&ust=1694832188392000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNDzgobMq4EDFQAAAAAdAAAAABAS"/>
-        <img /> <!-- 독립형태그 -->
+        nav ul {
+            list-style: none;
+            margin: 30px; 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-        <태그 속성="값">내용</태그>
-        <태그 속성="값" />
+        nav ul li {
+            margin-right: 40px;
+        }
 
-    </body>
-</html> <!-- 종료태그 -->
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .center-text {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 180px;
+            text-align: center;
+        }
+
+        .center-text h1 {
+            font-size: 158px; /* 큰 글자 크기 */
+        }
+
+        .small-text {
+            font-size: 16px;
+            color: #000000; /* 필요에 따라 색상 조정 */
+            margin-top: 10px; /* 필요에 따라 간격 조정 */
+        }
+
+        .center-button {
+            margin-top: 30px; /* 버튼과 텍스트 간격 조절 */
+            text-align: center;
+        }
+
+        .rounded-box {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #000000; /* 배경색 */
+            color: #ffffff; /* 글자색 */
+            border-radius: 50px; /* 모서리 둥글게 만들기 */
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s, color 0.3s; /* 호버 시 변화를 부드럽게 만들기 위한 transition 속성 추가 */
+        }
+
+        /* 버튼에 호버 효과 */
+        .rounded-box:hover {
+            background-color: #ffffff; /* 호버 시 배경색 반전 */
+            color: #000000; /* 호버 시 글자색 반전 */
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 250%;
+            left: 0;
+            width: 100%;
+            border-top: 1px solid black;
+        }
+        
+        body {
+            background-image: url('터래기1.jpg'); /* 배경 이미지 경로 지정 */
+            background-size: cover; /* 화면에 꽉 차도록 이미지 크기 조절 */
+            background-position: center; /* 이미지를 가운데 정렬 */
+            background-repeat: no-repeat; /* 배경 이미지 반복 없음 */
+            font-family: 'Noto Sans KR', sans-serif; /* Noto Sans KR 폰트 사용, 이 외에 다른 폰트로 변경 가능 */
+        }
+
+        .center-text,
+        .small-text,
+        .center-button {
+            font-family: 'Noto Sans KR', sans-serif; /* 위와 동일하게 폰트 적용 */
+        }
+
+        header img {
+            max-width: 80px; /* 이미지 최대 너비 설정 */
+            vertical-align: middle; /* 텍스트와 수직 정렬 */
+            margin-right: 10px; /* 이미지 오른쪽 여백 설정 */
+            position: absolute; /* 절대 위치 지정 */
+            left: 20px; /* 왼쪽 모서리에 위치 */
+            cursor: pointer; /* 포인터 모양으로 변경하여 클릭 가능함을 표시 */
+        }
+
+        hr {
+            margin: 150px 0; /* 수평 줄 위 아래 간격 조절 */
+            border: none;
+            border-top: 1px solid #929292; /* 수평 줄 스타일 및 색상 설정 */
+        }
+
+        footer ul{
+            display: flex;
+            list-style: none;
+            padding: 0px;
+        }
+        footer li{
+            padding-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <header>
+            <!-- 이미지 추가 -->
+            <a href="index.html"> <!-- 링크 추가 -->
+                <img src="로고.png" alt="Icon">
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/piu/Desktop/vs%20nohdohee/nohdohee.github.io/html.html" onclick="showPage('html')">html</a></li>
+                    <li><a href="file:///C:/Users/piu/Desktop/vs%20nohdohee/nohdohee.github.io/css.html" onclick="showPage('css')">css</a></li>
+                    <li><a href="file:///C:/Users/piu/Desktop/vs%20nohdohee/nohdohee.github.io/sub.html" onclick="showPage('sub')">sub</a></li>
+                    <li><a href="file:///C:/Users/piu/Desktop/vs%20nohdohee/nohdohee.github.io/layout%601.html" onclick="showPage('layout.1')">layout.1</a></li>
+                    <li><a href="file:///C:/Users/piu/Desktop/vs%20nohdohee/nohdohee.github.io/layout%602.html" onclick="showPage('layout.2')">layout.2</a></li>
+                    <li><a href="file:///C:/Users/piu/Desktop/vs%20nohdohee/nohdohee.github.io/layout%603.html" onclick="showPage('layout.3')">layout.3</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="center-text">
+            <h1>my portfolio</h1>
+
+            <!-- 작은 텍스트 -->
+            <p class="small-text"><br></p>
+
+            <!-- 다섯 개의 버튼 -->
+            <div class="center-button">
+                <a href="file:///C:/Users/piu/Desktop/vs%20nohdohee/nohdohee.github.io/%EC%BD%98%ED%85%90%EC%B8%A0%20%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80.html" class="rounded-box">Content Design</a>
+                <a href="file:///C:/Users/piu/Desktop/vs%20nohdohee/nohdohee.github.io/3D%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80.html" class="rounded-box">3D Design</a>
+                <a href="file:///C:/Users/piu/Desktop/vs%20nohdohee/nohdohee.github.io/%EB%AA%A8%EC%85%98%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4%20%ED%8E%98%EC%9D%B4%EC%A7%80.html" class="rounded-box">motion graphics</a>
+                <a href="file:///C:/Users/piu/Desktop/vs%20nohdohee/nohdohee.github.io/%EB%82%B4%EC%9E%91%ED%92%88%20%ED%8E%98%EC%9D%B4%EC%A7%80.html" class="rounded-box">Art Work</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 수평 줄 추가 -->
+    <hr>
+
+    <footer>
+        <div class="short_line"></div>
+        <ul>
+            <li><img src="iiicon1.png" /></li>
+            <li><img src="iiicon2.png" /></li>
+            <li><img src="iiicon3.png" /></li>
+            <li><img src="iiicon4.png" /></li>
+        </ul>
+        <div class="short_line"></div>
+        <p> It's very 우땨땨 </p>
+    </footer>
+
+    <script>
+        // 로고 이미지 클릭 시 index.html로 이동
+        document.querySelector('header img').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+        
+        function showPage(pageId) {
+            // 페이지 전환 로직 추가
+        }
+    </script>
+</body>
+</html>
